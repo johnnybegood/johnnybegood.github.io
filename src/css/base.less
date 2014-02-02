@@ -72,3 +72,46 @@ h1 small, h2 small, h3 small, h4 small {
 		clear: both;
 	}
 }
+
+ul.horizontal-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+		li {
+			display: inline-block;
+			padding: 0 10px;
+
+			&:first-child {
+				padding-left: 0px !important
+			}
+		}
+}
+
+.primary .square, .secondary .square {
+	background: white;
+}
+
+.primary .square {
+	color: @primary;
+}
+
+.secondary .square {
+	color: @secondary;
+}
+
+.square {
+	.rounded-corners();
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	line-height: 150px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.secondary .square:hover {
+	background: @primary;
+}
+

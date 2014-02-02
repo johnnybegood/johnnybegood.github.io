@@ -3,7 +3,12 @@
 @secondary: #5079D4;
 @tertiary: #9F6ED1;
 
+@light-gray: #DEDEDE;
+
 @text: white;
+
+/* Pahts */
+@imgpath: "../img/";
 
 /* Fonts */
 @font-face {
@@ -45,3 +50,11 @@
 @body: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 @header: "bariol_boldbold", @body;
 @header-light: "bariolthin", @body;
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}

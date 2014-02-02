@@ -26,3 +26,19 @@
 .row .coll:last-child {
 	margin-right: 0px;
 }
+
+.social-button(@bg) {
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -99999px;
+	background-image: url("../img/@{bg}.min.svg");
+
+	&:hover {
+		background-image: url("../img/@{bg}-inverse.min.svg");
+	}
+}
+
+#skype-button { .social-button("skype"); }
+#linkedin-button { .social-button("linkedin"); }
+#twitter-button { .social-button("twitter"); }
+#github-button { .social-button("github"); }
