@@ -1,0 +1,54 @@
+#header {
+	.container;
+	position: fixed;
+	top: 0;
+	heigh: 50px;
+	left: 0;
+	right: 0;
+	
+	.logo {
+		.logo(50px);
+		float: left;
+	}
+
+	.nav-bar {
+		float:right;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li, li a  {
+			color: @text;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.1em;
+			display: inline-block;
+			padding: 0 10px;
+			line-height: 50px;
+
+			&:hover, &.nav-active {
+				background: white;
+				color: @primary;
+			}
+		}
+	}
+
+
+	&.inverse {
+		background: white;
+
+		.logo {
+			.logo-inverse(50px);
+		}
+
+		.nav-bar li, .nav-bar li a {
+			color: @primary;
+
+			&:hover, &.nav-active {
+				background: @primary;
+				color: white;
+			}
+		}
+	}
+}
+

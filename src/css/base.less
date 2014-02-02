@@ -1,0 +1,64 @@
+body {
+	background-color: @primary;
+	color: @text;
+}
+
+h1, h2, h3, h4 {
+	font-family: @header;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h1 small, h2 small, h3 small, h4 small {
+	font-family: @header-light;
+	font-size: 0.6em;
+}
+
+.logo (@height) {
+    background: url("../../dist/img/logo.min.svg") no-repeat;
+    background-size: (393.67 * (@height / 84.18)) @height;
+    height: @height;
+    width: 393.67 * (@height / 84.18);
+	display: block;
+	text-indent: -9999px;
+}
+
+.logo-inverse (@height) {
+    background: url("../../dist/img/logo-inverse.min.svg") no-repeat;
+    background-size: (393.67 * (@height / 84.18)) @height;
+    height: @height;
+    width: 393.67 * (@height / 84.18);
+	display: block;
+	text-indent: -9999px;
+}
+
+.hero {
+	font-family: @header-light;
+	font-size: 5em;
+	padding: 10px 20px;
+	
+	strong {
+		font-family: @header;
+	}
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.block {
+	.container;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	.block-title {
+		margin-top: 0px;
+	}
+
+	&.secondary {
+		background-color: @secondary;
+	}
+}
