@@ -522,7 +522,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 	function init() {
 		$("a[id]").waypoint(setNavigation);
-		$(".content").waypoint(changeHeader);
+		$("#header-waypoint").waypoint(changeHeader);
 	}
 
 	function changeHeader(direction) {

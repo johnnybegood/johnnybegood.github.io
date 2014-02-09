@@ -17,36 +17,26 @@ h2 {
 }
 
 h1 small, h2 small, h3 small, h4 small {
-	font-family: @header-light;
-	font-size: 0.6em;
+	font-family: @body;
+	font-size: 0.5em;
 }
 
 .logo (@height) {
     background: url("../../dist/img/logo.min.svg") no-repeat;
-    background-size: (393.67 * (@height / 84.18)) @height;
+    background-size: (1270 * (@height / 195)) @height;
     height: @height;
-    width: 393.67 * (@height / 84.18);
+    width: 1270 * (@height / 195);
 	display: block;
 	text-indent: -9999px;
 }
 
 .logo-inverse (@height) {
     background: url("../../dist/img/logo-inverse.min.svg") no-repeat;
-    background-size: (393.67 * (@height / 84.18)) @height;
+    background-size: (1270 * (@height / 195)) @height;
     height: @height;
-    width: 393.67 * (@height / 84.18);
+    width: 1270 * (@height / 195);
 	display: block;
 	text-indent: -9999px;
-}
-
-.hero {
-	font-family: @header-light;
-	font-size: 5em;
-	padding: 10px 20px;
-	
-	strong {
-		font-family: @header;
-	}
 }
 
 .container {
@@ -68,6 +58,10 @@ h1 small, h2 small, h3 small, h4 small {
 		background-color: @secondary;
 	}
 
+	&.tertiary {
+		background-color: @tertiary;
+	}
+
 	.clearfix {
 		clear: both;
 	}
@@ -86,9 +80,10 @@ ul.horizontal-list {
 				padding-left: 0px !important
 			}
 		}
+		
 }
 
-.primary .square, .secondary .square {
+.primary .square, .secondary .square, .tertiary .square {
 	background: white;
 }
 

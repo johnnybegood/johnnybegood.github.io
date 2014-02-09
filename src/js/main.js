@@ -2,7 +2,7 @@
 
 	function init() {
 		$("a[id]").waypoint(setNavigation);
-		$(".content").waypoint(changeHeader);
+		$("#header-waypoint").waypoint(changeHeader);
 	}
 
 	function changeHeader(direction) {

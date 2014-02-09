@@ -1,7 +1,7 @@
 /* Colors */
-@primary: #97CB38;
-@secondary: #5079D4;
-@tertiary: #9F6ED1;
+@primary: #4DA8EB;
+@secondary: #DD7D69;
+@tertiary: #4DA8EB;
 
 @light-gray: #DEDEDE;
 
@@ -11,45 +11,34 @@
 @imgpath: "../img/";
 
 /* Fonts */
-@font-face {
-    font-family: 'bariol_boldbold';
-    src: url('../../fonts/bariol_bold-webfont.eot');
-    src: url('../../fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/bariol_bold-webfont.woff') format('woff'),
-         url('../../fonts/bariol_bold-webfont.ttf') format('truetype'),
-         url('../../fonts/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/**
+ * @license
+ * MyFonts Webfont Build ID 2743166, 2014-02-09T11:05:55-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Industry Inc Base by Hold Fast Foundry
+ * URL: http://www.myfonts.com/fonts/hold-fast-foundry/industry-inc/base/
+ * Copyright: Copyright &#x00A9; 2014 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2743166
+ * 
+ * © 2014 MyFonts Inc
+*/
 
-}
 
-@font-face {
-    font-family: 'bariol_lightlight';
-    src: url('../../fonts/bariol_light-webfont.eot');
-    src: url('../../fonts/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/bariol_light-webfont.woff') format('woff'),
-         url('../../fonts/bariol_light-webfont.ttf') format('truetype'),
-         url('../../fonts/bariol_light-webfont.svg#bariol_lightlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'bariolthin';
-    src: url('../../fonts/bariol_thin-webfont.eot');
-    src: url('../../fonts/bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/bariol_thin-webfont.woff') format('woff'),
-         url('../../fonts/bariol_thin-webfont.ttf') format('truetype'),
-         url('../../fonts/bariol_thin-webfont.svg#bariolthin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {font-family: 'IndustryInc-Base';src: url('webfonts/29DB7E_0_0.eot');src: url('webfonts/29DB7E_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/29DB7E_0_0.woff') format('woff'),url('webfonts/29DB7E_0_0.ttf') format('truetype');}
+ 
 
 @body: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-@header: "bariol_boldbold", @body;
-@header-light: "bariolthin", @body;
+@header: "IndustryInc-Base", @body;
 
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
