@@ -18,6 +18,8 @@ results
 build
 .grunt
 
+Thumbs.db
+
 node_modules
 
 *.ai

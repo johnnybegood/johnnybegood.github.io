@@ -65,6 +65,23 @@ module.exports = function(grunt) {
       }
     },
 
+    responsive_images: {
+      bgTask: {
+        options: {
+          sizes: [
+            { width: 320 },
+            { width: 640 },
+            { width: 2000 }]
+        },
+        files: [{
+          expand: true,
+           cwd: 'src/img/',        
+           src: ['bg_*.{jpg,gif,png}'],
+           dest: 'dist/img/'
+        }]
+      }
+    },
+
     connect: {
       server: {
         options: {
@@ -90,9 +107,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-responsive-images');
 
   // Default task(s).
-  grunt.registerTask('default', ['svgmin', 'less', 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['svgmin', 'less', 'jshint', 'concat', 'uglify', 'responsive_images']);
 
   // Host task(s)
   grunt.registerTask("host", ["default", "connect", "watch"]);
