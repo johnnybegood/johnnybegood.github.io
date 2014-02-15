@@ -11,47 +11,61 @@
             <a href="/" class="logo">johnny be good</a>
             <ul class="nav-bar">
                 <li><a href="#what">What do I do</a></li>
-                <li><a href="#projects">Projects</a></li>
+               <!-- <li><a href="#projects">Projects</a></li>/-->
                 <li><a href="#contact">Contact me</a></li>
             </ul>
         </header>
         <div class="content">
             <div class="hero">
                 <div id="header-waypoint"></div>
-                Hi, my name is Wouter Hemeryck<br />and I'm an <strong>Application Designer</strong>
+                Hi, my name is Wouter Hemeryck<br />
+                and I'm an <strong>Application Designer,<br />
+                IT Strategist &amp; Web Technologist</strong>
             </div>
 
             <a id="what"></a>
             <div class="block tertiary">
-                <h1 class="block-title">What do I do? <small>I design enterprise applications that fit inside your processes.</small></h1>
+                <h1 class="block-title">What do I do?</h1>
+                <div class="subtitle">Align IT with the needs of the business, its users and customers</div>
                 
-                <div class="row">
-                    <div class="coll">
-                        <h2>UX Researcher</h2>
-                        <p>Researching the business and the user behind an application to ! enable the development of applications that support the bussiness and it's users, both inside and outside the organisation. Creating unified experiences accross applications and channels</p>
-                    </div>
+                <h2>Application Designer</h2>
+                <p>Researching the business and the users behind it (both inside and outside the organisation).</p>
+                <ul>
+                    <li>Usability research, design and testing</li>
+                    <li>Information architecture</li>
+                    <li>Functional analysis</li>
+                    <li>Prototyping &amp; sketching</li>
+                    <li>Visual Design</li>
+                    <li>Cross channel experience design (phone, tablet, laptop &amp; desktop)</li>
+                </ul>
 
-                    <div class="coll">
-                        <h2>Web Technologist</h2>
-                        <p>The best application experience can only be build on top on a solid technology base. Coding with HTML, CSS, javascript and .NET</p>
-                    </div>
+                <h2>IT Strategist</h2>
+                <p>Helping your organisation building a platform that goes further than software. Linking all bits and bytes inside an organisation.</p>
+                <ul>
+                    <li>Linking business needs to IT solutions</li>
+                    <li>Research and documenting business needs</li>
+                    <li>Long-term IT vision &amp; planning</li>
+                </ul>
 
-                    <div class="coll">
-                        <h2>IT Strategist</h2>
-                        <p>Helping your organisation building a platform that goes further than software. Linking all bits and bytes inside an organisation.</p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
+                <h2>Web Technologist</h2>
+                <p>The best application experience can only be build on top on a solid technology base.</p>
+                <ul>
+                    <li>HTML Stack: HTML, javascript &amp; CSS</li>
+                    <li>JQuery, LESS, Grunt, ...</li>
+                    <li>ASP.NET MVC</li>
+                    <li>Cross channel web development (phone, tablet, laptop &amp; desktop)</li>
+                    <li>Performance tuning</li>
+                </ul>
             </div>
-
+<!-- TODO
             <a id="projects"></a>
             <div class="block secondary">
                 <h1 class="block-title">Project highlights</h1>
                 <p>More to come soon</p>
-            </div>
+            </div>//-->
 
             <a id="contact"></a>
-            <div class="block tertiary">
+            <div class="block secondary">
                 <h1 class="block-title">Contact me</h1>
                 <ul class="horizontal-list">
                     <li><a href="https://twitter.com/devkiller" id="twitter-button" class="square" title="Twitter">Twitter</a></li>
@@ -69,5 +83,15 @@
         <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.legacy.min.js"></script>
         <script type="text/javascript" src="dist/js/jbg-2014.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-48114166-1', 'johnnybegood.github.io');
+          ga('send', 'pageview');
+
+        </script>
     </body>
 </html>

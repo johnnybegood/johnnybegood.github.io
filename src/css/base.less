@@ -16,13 +16,23 @@ h2 {
 	font-size: 2em;
 }
 
+h2 + p {
+	margin-top: -1.5em;
+}
+
 h1 small, h2 small, h3 small, h4 small {
 	font-family: @body;
 	font-size: 0.5em;
 }
 
+h1 + .subtitle {
+	margin-top: -1em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
 .logo (@height) {
-    background: url("../../dist/img/logo.min.svg") no-repeat;
+    background: url("../img/logo.min.svg") no-repeat;
     background-size: (1270 * (@height / 195)) @height;
     height: @height;
     width: 1270 * (@height / 195);
@@ -31,7 +41,7 @@ h1 small, h2 small, h3 small, h4 small {
 }
 
 .logo-inverse (@height) {
-    background: url("../../dist/img/logo-inverse.min.svg") no-repeat;
+    background: url("../img/logo-inverse.min.svg") no-repeat;
     background-size: (1270 * (@height / 195)) @height;
     height: @height;
     width: 1270 * (@height / 195);
@@ -75,6 +85,7 @@ ul.horizontal-list {
 		li {
 			display: inline-block;
 			padding: 0 10px;
+			line-height: 1.5em;
 
 			&:first-child {
 				padding-left: 0px !important
