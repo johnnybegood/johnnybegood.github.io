@@ -2,7 +2,7 @@ body {
 	background-color: @primary;
 	color: @text;
 	font-size: 100%;
-	min-width: 500px;
+	min-width: 320px;
 }
 
 h1, h2, h3, h4 {
@@ -89,7 +89,7 @@ ul.horizontal-list {
 			line-height: 1.5em;
 
 			&:first-child {
-				padding-left: 0px !important
+				padding-left: 0px;
 			}
 		}
 		
@@ -107,16 +107,18 @@ ul.horizontal-list {
 	color: @secondary;
 }
 
-.square {
+.square(@size) {
 	.rounded-corners();
 	display: inline-block;
-	height: 150px;
-	width: 150px;
-	line-height: 150px;
+	height: @size;
+	width: @size;
+	line-height: @size;
 	text-align: center;
 	text-decoration: none;
 	font-size: 2em;
 }
+
+.square { .square(150px) };
 
 .secondary .square:hover {
 	background: @primary;
