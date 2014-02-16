@@ -69,9 +69,10 @@ module.exports = function(grunt) {
       bgTask: {
         options: {
           sizes: [
-            { width: 320 },
-            { width: 640 },
-            { width: 2000 }]
+            { width: 770, quality: 60 },
+            { width: 1025 },
+            { width: 1300 },
+            { width: 2000, quality: 50 }]
         },
         files: [{
           expand: true,
@@ -93,7 +94,7 @@ module.exports = function(grunt) {
 
     watch: {
       src: {
-        files: ['src/**/*.*', "*.html"],
+        files: ['src/**/*.*', "*.html", "Gruntfile.js"],
         tasks: ['default'],
         options: { livereload: true}
       },  

@@ -1,7 +1,61 @@
-@media (max-width: 1567px) {
+@media (max-width: 1300px) {
 
-	body {
-		font-size: 0.8em;
+	.content .hero {
+		font-size: 3em;
+		background: url("../img/bg_hero-1300.jpg") top left; 
+		height: 650px;
+		padding-top: 150px;
+	}
+}
+
+@media (min-width: 1300px) {
+
+	.content .hero {
+		font-size: 4em;
+		height: 1000px;
+		padding-top: 200px;
+		background: url("../img/bg_hero-2000.jpg") top left; 
+	}
+}
+
+@media (max-width: 1025px) {
+
+	.content .hero {
+		font-size: 2em;
+		background: url("../img/bg_hero-1025.jpg") top left; 
+		height: 400px;
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 770px) {
+
+	.content .hero {
+		font-size: 1.2em;
+		background: url("../img/bg_hero-770.jpg") top left; 
+		height: (300px - 20px);
+		padding-top: (81px + 20px);
 	}
 
+	h1 {
+		font-size: 2em;
+
+		& + .subtitle {
+			margin-top: -1em;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+	}
+
+	h2 {
+		font-size: 1.1em;
+
+		& + p {
+			margin-top: -1em;
+		}
+	}
+
+	.nav-bar {
+		display: none;
+	}
 }
